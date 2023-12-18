@@ -1,0 +1,26 @@
+<ng-container>
+    <div>
+        <p>Ola, {{nome}}</p>
+        <div class="info">
+            <p><strong>Ag:</strong> XXXX</p><p><strong>CC:</strong> XXXXX-X</p>
+        </div>
+        
+        <div class="input">
+            <input type="number" name="sacar" id="sacar" #saque>
+            <label for="sacar">Sacar</label>
+            <button id="sacar-btn" (click)="sacar = saque.value">Sacar</button>
+        </div>
+        <br>
+        <div class="input">
+            <input type="number" name="depositar" id="depositar" #deposito>
+            <label for="depositar">Depositar</label>
+            <button id="depositar-btn" (click)="depositar = deposito.value">Depositar</button>
+        </div>
+    
+        <div class="saldo">
+            <p>Conta Corrente: {{contaCorrente}}</p>
+            <p>Carteira: {{clienteCarteira}}</p>
+        </div>
+    
+    </div>
+    </ng-container>
